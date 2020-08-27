@@ -1,9 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
- * Created on August 26th, 2020, 6:14 PM
- * Purpose:  Template which is to be copied for all future
- *           Homework, Labs, Projects, Test, etc...
+ * Created on August 26th, 2020, 1:50 PM
+ * Purpose:  Hello World Demo
  */
 
 //System Libraries
@@ -29,6 +28,7 @@ int main(int argc, char** argv) {
     //Maps known values to the unknown objectives
     
     //Display the Inputs/Outputs
+    cout<<"Hello World"<<endl;
 
     //Clean up the code, close files, deallocate memory, etc....
     //Exit stage right

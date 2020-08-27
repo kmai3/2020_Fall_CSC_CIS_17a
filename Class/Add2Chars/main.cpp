@@ -2,8 +2,7 @@
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
  * Created on August 26th, 2020, 6:14 PM
- * Purpose:  Template which is to be copied for all future
- *           Homework, Labs, Projects, Test, etc...
+ * Purpose:  Show you can add 2 chars
  */
 
 //System Libraries
@@ -22,13 +21,19 @@ int main(int argc, char** argv) {
     //Set the random number seed here
     
     //Declare all variables for this function
+    char op1, op2, result;
     
     //Initialize all known variables
+    op1=30;
+    op2=40;
     
     //Process Inputs to Outputs -> Mapping Process
     //Maps known values to the unknown objectives
+    result=op1+op2;
     
     //Display the Inputs/Outputs
+    cout<<static_cast<int>(op1)<<"+"<<static_cast<int>(op2)
+            <<"="<<static_cast<int>(result)<<endl;
 
     //Clean up the code, close files, deallocate memory, etc....
     //Exit stage right
