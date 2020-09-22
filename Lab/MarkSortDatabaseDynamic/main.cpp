@@ -18,9 +18,9 @@ using namespace std;
 
 //Function Prototypes
 void fillAry(int *,int *,int);
-void prntAry(int *,int,int);
-void prntAry(int *,int *,int,int);
-void markSrt(int *,int *,int);
+void prntAry(const int *,int,int);
+void prntAry(const int *,const int *,int,int);
+void markSrt(const int *,int *,int);
 void destroy(int *,int *);
 
 //Execution Begins Here!
@@ -62,7 +62,7 @@ void destroy(int *a,int *i){
     delete []i;
 }
 
-void markSrt(int *a,int *idx,int n){
+void markSrt(const int *a,int *idx,int n){
     for(int pos=0;pos<n-1;pos++){
         for(int i=pos+1;i<n;i++){
             if(*(a+*(idx+pos))>*(a+*(idx+i))){
@@ -74,7 +74,7 @@ void markSrt(int *a,int *idx,int n){
     }
 }
 
-void prntAry(int *array,int *indx,int n,int perLine){
+void prntAry(const int *array,const int *indx,int n,int perLine){
     cout<<endl;
     for(int i=0;i<n;i++){
         cout<<*(array+*(indx+i))<<" ";//2 digit random number
@@ -83,7 +83,7 @@ void prntAry(int *array,int *indx,int n,int perLine){
     cout<<endl;
 }
 
-void prntAry(int *array,int n,int perLine){
+void prntAry(const int *array,int n,int perLine){
     cout<<endl;
     for(int i=0;i<n;i++){
         cout<<*(array+i)<<" ";//2 digit random number
